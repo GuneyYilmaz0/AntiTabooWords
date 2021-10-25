@@ -1,7 +1,7 @@
 import yaml
 def yaml_loader(filepath):
     with open(filepath, "r") as file_descriptor:
-        data = yaml.safe_load(file_descriptor) # Loader parametresi olmadan yaml.load deprecated
+        data = yaml.safe_load(file_descriptor)
     return data
 
 

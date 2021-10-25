@@ -35,13 +35,13 @@ def select_word(gamemode):
 
     number = random.randint(0, len(words_data) - 1)
     if not is_cached(words_data[number]):
-        return easy_mode(words_data[number])
+        return play(words_data[number])
     else:
         print("aynı kelime bulundu başka kelime verilecek")
         return select_word(gamemode)
 
 
-def easy_mode(selected_word):
+def play(selected_word):
     return selected_word.split(":")
 
 
